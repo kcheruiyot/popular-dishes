@@ -1,12 +1,14 @@
 package com.kipngetich.populardishes.repository;
 
-import com.kipngetich.populardishes.model.User;
+import com.kipngetich.populardishes.model.Dish;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
+
+import javax.transaction.Transactional;
 
 /**
  * Created by Kipngetich
  */
 @Repository
-public interface UserRepository extends CrudRepository<User,Integer> {
+public interface DishRepository extends CrudRepository<Dish,Integer>{
 }
